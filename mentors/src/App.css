@@ -1,0 +1,389 @@
+.img {
+  width: 100%;
+  background-color: rgb(97, 168, 163);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.cardsWrapper {
+  width: 100%;
+  padding: 25px;
+  padding-inline: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+  top: 190px;
+}
+
+.clickedBtnsWrapper {
+  width: 75%;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: 3px 0.5px 13px 0.5px rgb(97, 168, 163);
+}
+
+.closeBtn {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.clickedButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.clickedButton {
+  background-color: rgb(97, 168, 163);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+body {
+  background-color: #eff6f6;
+}
+
+.card {
+  width: 100%;
+  padding: 30px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 3px 0.5px 13px 0.5px rgb(97, 168, 163);
+}
+.new{
+  width: 70px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(97, 168, 163);
+}
+.featured{
+  width: 100px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: black;
+}
+.card2 {
+  border: none;
+}
+
+.card:nth-child(1),
+.card:nth-child(2) {
+  border-left: 6px solid rgb(97, 168, 163);
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  width: 320px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row1,
+.row2,
+.row3 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  gap: 30px;
+}
+
+.row1 h4 {
+  color: rgb(97, 168, 163);
+  font-size: 18px;
+}
+
+.row1 .h4 {
+  color: white;
+  background-color: rgb(97, 168, 163);
+  font-size: 18px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.row1 .h5 {
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  width: 110px;
+  height: 30px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 h4 {
+  font-size: 18px;
+}
+
+.row3 h4 {
+  font-size: 18px;
+  color: gray;
+  display: flex;
+}
+
+.btns {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #eff6f6;
+  color: rgb(97, 168, 163);
+  border: none;
+  font-family: monospace;
+  font-weight: 900;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-inline: 5px;
+  transition: all .3s ease;
+}
+
+button:hover {
+  background-color: rgb(97, 168, 163);
+  color: white;
+}
+@media (max-width: 1115px) {
+  .btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-top: 3px solid rgb(204, 204, 204);
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  .card{
+    display: flex;
+  }
+  .cardimgtxt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 868px) {
+  .card{
+    position: relative;
+    margin-top: 40px;
+  }
+  .img{
+    position: fixed;
+    height: 140px;
+  }
+  .image {
+    position: absolute;
+    top: -50px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+  }
+  .text{
+    margin-top: 40px;
+  }
+}
+@media (max-width: 850px) {
+  .btns{
+    padding-bottom: 80px;
+  }
+  .card{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 624px) {
+  .row1 div{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row2{
+    margin-top: 65px;
+  }
+  .row3{
+    margin-top: 30px;
+  }
+  .btns{
+    margin-top: 100px;
+  }
+  .card{
+    padding-bottom: 65px;
+  }
+}
+
+@media (max-width: 590px) {
+ .card{
+  width:500px;
+  position: relative;
+  right: 150px;
+  margin-left: 20px;
+ } 
+ .img{
+  width: 100%;
+ }
+}
+
+@media (max-width: 575px) {
+  .card{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 555px) {
+  .card{
+    position: relative;
+    right: 170px;
+  }
+}
+@media (max-width: 527px) {
+  .card{
+    position: relative;
+    right: 175px;
+  }
+}
+@media (max-width: 520px) {
+  .card{
+    position: relative;
+    right: 177px;
+  }
+}
+@media (max-width: 515px) {
+  .card{
+    position: relative;
+    right: 190px;
+  }
+}
+@media (max-width: 503px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 400px;
+  }
+}
+@media (max-width: 492px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 410px;
+  }
+}
+@media (max-width: 475px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 390px;
+  }
+}
+@media (max-width: 457px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 370px;
+  }
+}
+@media (max-width: 429px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 350px;
+  }
+}
+@media (max-width: 405px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 330px;
+  }
+}
+@media (max-width: 390px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 320px;
+  }
+}
+@media (max-width: 383px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 305px;
+  }
+}
+@media (max-width: 371px) {
+  .card{
+    position: relative;
+    right: 150px;
+    width: 295px;
+  }
+}
+@media (max-width: 357px) {
+  .card{
+    position: relative;
+    right: 160px;
+    width: 280px;
+  }
+}
+@media (max-width: 343px) {
+  .img{
+    position: fixed;
+    right: -10px;
+    width: 400px;
+  }
+}

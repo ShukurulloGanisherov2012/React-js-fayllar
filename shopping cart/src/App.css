@@ -1,0 +1,76 @@
+.card-img-top{
+    transition:all .5s ease;
+    cursor: pointer;
+}
+.product-card:hover .card-img-top{
+    transform: scale(1.1);
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+.image{
+    opacity: 0.94;
+    border-radius: 30px;
+}
+.swiper{
+    border-radius: 32px ;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  .not-found-bg {
+    background: url('https://www.lifewire.com/thmb/auk-givypeTY383aFHJnpl6fQSU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/404-not-found-error-explained-2622936-Final-fde7be1b7e2e499c9f039d97183e7f52.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .not-found-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-center {
+    z-index: 1;
+  }
+  
+  img {
+    z-index: 1;
+  }
+  
